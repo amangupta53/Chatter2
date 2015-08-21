@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fishmethis.aman.chatter2" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetUsr"
+            android:label="@string/title_activity_set_usr"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fishmethis.aman.chatter2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SelectPartner"
+            android:label="@string/title_activity_select_partner"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fishmethis.aman.chatter2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Chatter"
+            android:label="@string/title_activity_chatter"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fishmethis.aman.chatter2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SetUsrF"
+            android:label="@string/title_activity_set_usr_f" >
+        </activity>
+        <activity
+            android:name=".oldusr"
+            android:label="@string/title_activity_oldusr"
+            android:parentActivityName=".SetUsrF" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fishmethis.aman.chatter2.SetUsrF" />
+        </activity>
+    </application>
+
+</manifest>
